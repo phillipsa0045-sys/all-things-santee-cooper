@@ -1,0 +1,39 @@
+name: Publish daily lake report
+description: Publish the daily All Things Santee Cooper commentary (repository owner only).
+title: "[DAILY REPORT] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public GitHub issue. Do not include Patreon-only locations, confidential information, or private details. The website still gets live readings from USGS and NWS; enter only verified analysis. Leave a section blank to keep its existing text.
+  - type: textarea
+    id: levels
+    attributes:
+      label: Lake level analysis
+      description: Interpretation of verified conditions, not unverified numerical readings.
+      placeholder: Lake Marion and Moultrie trend interpretation...
+  - type: textarea
+    id: wind
+    attributes:
+      label: Wind analysis
+      description: Exposure, fetch, gusts and boating considerations. Avoid unverified wind measurements.
+      placeholder: Today's wind outlook and water-exposure analysis...
+  - type: textarea
+    id: fishing
+    attributes:
+      label: Fishing outlook
+      description: Public general fishing analysis. Keep paid tactical and GPS material on Patreon.
+      placeholder: Today's bait, species, patterns and seasonal behavior...
+  - type: textarea
+    id: canal
+    attributes:
+      label: Diversion Canal
+      description: State clearly if flow could not be verified.
+      placeholder: No independently verified canal flow assessment for today.
+  - type: input
+    id: article
+    attributes:
+      label: Featured article URL
+      description: Optional public URL. Leave blank to keep existing link.
+      placeholder: https://...
