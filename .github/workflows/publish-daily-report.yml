@@ -1,0 +1,36 @@
+name: Publish daily lake report
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: daily-report-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: >-
+      ${{ github.event.issue.user.login == github.repository_owner &&
+          startsWith(github.event.issue.title, '[DAILY REPORT]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+      - name: Apply editor report
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python3 scripts/publish_report.py
+      - name: Commit daily report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add editorial.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish daily conditions analysis from issue #${{ github.event.issue.number }}"
+            git push
+          fi
+      - name: Mark report processed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "${{ github.event.issue.number }}" --comment "Daily analysis processed. Check the dashboard after GitHub Pages finishes deploying."
