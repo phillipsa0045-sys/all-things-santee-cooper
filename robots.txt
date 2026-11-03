@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phillipsa0045-sys.github.io/all-things-santee-cooper/sitemap.xml
