@@ -1,10 +1,11 @@
 # ATSC November 2026 — Week 1 Field Report Working Plan
 Status: PRE-FIELD / RESEARCH ONLY. Not for publication as a verified catch report.
 Created: November 3, 2026.
-Fieldwork begins: November 4, 2026, weather and safe access permitting.
+Target fieldwork: Thursday, November 5, 2026, weather and safe access permitting. Saturday November 7 is a backup.
 
 ## Working investigation
-Target region: Mid-Lake Marion, I-95 corridor.
+Target region: Mid-Lake Marion, I-95 corridor as shown in the user's contour map.
+Tentative launch: Polly's Landing (not Holly's). Verify actual access and conditions before launch.
 Objective: Select ONE chart-confirmed channel shoulder / adjacent flat or slope transition to investigate. Do not claim a specific productive location until contours and sonar substantiate it. GPS locations are not stored in this public repository.
 
 ## October comparison baseline
