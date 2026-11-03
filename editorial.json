@@ -1,10 +1,12 @@
 {
-  "updated_at": "2026-11-03T09:35:00-05:00",
+  "updated_at": "2026-11-03T09:46:24-05:00",
   "outlook": "EARLY NOVEMBER FISHING OUTLOOK — Lake Marion and Lake Moultrie\n\nBegin with the wind forecast and the amount of open water between your fishing area and the windward shoreline. A light wind at one location does not guarantee comfortable conditions across a long fetch.\n\nFor catfish, use sonar to locate bait and look closely at channel edges, adjacent flats, points and depth transitions. Evaluate each location based on bait presence, current, water temperature and actual fish marks rather than assuming any one depth will hold fish throughout the day.\n\nThis is general seasonal guidance, not a verified report of fish activity at a particular location. The member-level structural breakdowns and location-specific tactics remain on Fishing My Life Away Patreon.",
   "canal": "DIVERSION CANAL STATUS — Not independently verified for this update.\n\nLake Marion and Lake Moultrie elevations alone do not establish how much water is moving through the Diversion Canal. Generation schedules, regulatory operations and conditions elsewhere in the system can change flow. Check official Santee Cooper updates before making decisions that depend on canal current.\n\nWe will publish a flow interpretation here only when supporting operational or discharge data have been verified.",
   "patreon": "https://www.patreon.com/cw/GrumpyWerks",
   "article": "https://www.patreon.com/GrumpyWerks/posts/youve-joined-my-173544747",
   "facebook": "https://www.facebook.com/groups/allthingssanteecooper",
   "youtube": "https://www.youtube.com/@FishingMyLifeAwaySC",
-  "gumroad": "https://grumpywerks.gumroad.com/"
+  "gumroad": "https://grumpywerks.gumroad.com/",
+  "level_analysis": "Daily lake-level readings above are published with USGS station timestamps. Review each gauge's vertical datum before comparing Lake Marion and Lake Moultrie. Water movement and reservoir operations require separate verification; elevation alone cannot establish canal discharge.",
+  "wind_analysis": "The hourly wind forecast above provides broad guidance, but wind exposure varies by fetch, shoreline orientation, gusts and travel route. Check the selected forecast area, recheck conditions before launching, and do not treat a forecast as a measured on-water reading."
 }
