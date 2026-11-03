@@ -18,7 +18,7 @@ FIELDS = {
     "Featured article URL": "article",
 }
 # The issue form uses GitHub's stable Markdown headings for its fields.
-pattern = r"(?m)^### (Lake level analysis|Wind analysis|Fishing outlook|Diversion Canal|Featured article URL)\\s*$"
+pattern = r"(?m)^### (Lake level analysis|Wind analysis|Fishing outlook|Diversion Canal|Featured article URL)\s*$"
 parts = re.split(pattern, BODY)
 parsed = {}
 for i in range(1, len(parts) - 1, 2):
