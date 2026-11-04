@@ -6,7 +6,7 @@
 */
 (function () {
   'use strict';
-  const GOATCOUNTER_SITE_CODE = '';
+  const GOATCOUNTER_SITE_CODE = 'allthingssanteecooper';
   if (!GOATCOUNTER_SITE_CODE) return;
   if (!/^[a-z0-9][a-z0-9-]*$/i.test(GOATCOUNTER_SITE_CODE)) return;
   const script = document.createElement('script');
