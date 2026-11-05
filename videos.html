@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10283f">
+<title>Fishing Videos | Fishing My Life Away | All Things Santee Cooper</title>
+<meta name="description" content="Explore Fishing My Life Away fishing trips, fishing techniques, boat equipment and reservoir adventures. Watch original videos directly on YouTube.">
+<link rel="canonical" href="https://atsclakes.com/videos.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="All Things Santee Cooper">
+<meta property="og:title" content="Fishing Videos | Fishing My Life Away">
+<meta property="og:description" content="Original fishing adventures, techniques and boat equipment videos, linked directly to YouTube.">
+<meta property="og:url" content="https://atsclakes.com/videos.html"><meta name="twitter:card" content="summary">
+<script data-goatcounter="https://allthingssanteecooper.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;--gold:#e2bc79;--line:#7794ab;--muted:#dae5ed}
+*{box-sizing:border-box}body{margin:0;background:#496781;color:#f5f8fc;line-height:1.6}a{color:#f1cf91}a:hover{color:#ffe0a5}a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}header{background:#10283f;border-bottom:1px solid #6d879f;padding:20px 0}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:1.7px;font-size:12px;text-transform:uppercase}
+.brand{font:700 clamp(24px,4vw,37px) Georgia,serif;margin:4px 0 10px}.brand span{color:var(--gold)}nav{display:flex;gap:12px 20px;flex-wrap:wrap}nav a{color:#e4edf3;text-decoration:none;font-size:14px}nav a:hover{text-decoration:underline}nav a[aria-current="page"]{color:var(--gold);font-weight:800}
+main{padding:38px 0 70px}h1{font:700 clamp(33px,5vw,50px)/1.15 Georgia,serif;margin:10px 0 15px}h2{font:700 25px Georgia,serif}.lead{max-width:820px;font-size:18px;color:var(--muted)}
+.hero{background:linear-gradient(120deg,#304c69,#385a78);border:1px solid var(--line);border-radius:13px;padding:25px;margin-bottom:25px}
+.button{display:inline-block;background:var(--gold);color:#10283f;text-decoration:none;border-radius:8px;font-weight:800;padding:11px 16px;margin-top:9px}.button:hover{color:#10283f;background:#f3ce8d}
+.tools{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 15px}input,select{font:inherit;background:#304c69;border:1px solid var(--line);border-radius:8px;padding:12px;color:#fff}input{flex:1;min-width:220px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin-top:14px}.card{background:#304c69;border:1px solid var(--line);border-radius:12px;overflow:hidden}.card-body{padding:19px}.card h2{font:700 23px Georgia,serif;margin:5px 0 8px}.card p{margin:0 0 12px;color:var(--muted)}.category{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--gold)}
+.thumb{display:block;aspect-ratio:16/9;background:#10283f;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.card .button{margin-top:4px}
+.note{background:#385a78;border-left:4px solid var(--gold);padding:17px 20px;border-radius:4px;margin-top:23px}.muted{color:var(--muted)}footer{background:#10283f;border-top:1px solid var(--line);padding:24px 0;font-size:13px;color:var(--muted)}
+@media(max-width:680px){.grid{grid-template-columns:1fr}.hero{padding:19px}main{padding-top:25px}}
+</style></head>
+<body>
+<header><div class="wrap"><div class="eyebrow">GRUMPYWERKS · RESERVOIR INFORMATION</div><div class="brand">ALL THINGS <span>SANTEE COOPER</span></div><nav aria-label="Site sections"><a href="./">Lake conditions</a><a href="./archive.html">Articles</a><a href="./videos.html" aria-current="page">Fishing videos</a><a href="./landings.html">Boat landings</a><a href="./membership.html">Patreon</a><a href="./shop.html">Books &amp; guides</a></nav></div></header>
+<main><div class="wrap">
+<section class="hero"><div class="eyebrow">FISHING MY LIFE AWAY · VIDEO LIBRARY</div><h1>Fishing Videos</h1><p class="lead">Fishing trips, on-the-water observations, techniques and equipment from Fishing My Life Away. Browse here, then watch each video on YouTube. Our historical research and written fishing articles remain in the separate <a href="./archive.html">Article Archive</a>.</p><a class="button" href="https://www.youtube.com/@FishingMyLifeAwaySC" target="_blank" rel="noopener noreferrer">Visit Fishing My Life Away on YouTube ↗</a></section>
+<section aria-label="Search fishing videos"><div class="eyebrow">EXPLORE THE VIDEOS</div><div class="tools"><input id="search" type="search" placeholder="Search by location, topic or equipment…" aria-label="Search fishing videos"><select id="category" aria-label="Filter video category"><option value="all">All categories</option><option>On the Water</option><option>Fishing Techniques</option><option>Boat &amp; Equipment</option><option>Fishing My Life Away</option></select></div><p id="count" class="muted" aria-live="polite">Loading video links…</p><div id="results" class="grid"></div></section>
+<div class="note"><strong>Watch on YouTube.</strong> Videos are not stored or played on ATSCLakes.com. Each listing opens the original Fishing My Life Away video in a new tab.</div>
+</div></main>
+<footer><div class="wrap">© Grumpywerks · All Things Santee Cooper · <a href="./archive.html">Article Archive</a> · <a href="https://www.youtube.com/@FishingMyLifeAwaySC" target="_blank" rel="noopener noreferrer">Fishing My Life Away on YouTube</a></div></footer>
+<script>
+const categories=['On the Water','Fishing Techniques','Boat & Equipment','Fishing My Life Away'];
+const $=id=>document.getElementById(id);let videos=[];
+function videoId(url){try{const u=new URL(url);const host=u.hostname.toLowerCase();if(host==='youtu.be'||host==='www.youtu.be')return /^[a-zA-Z0-9_-]{11}$/.test(u.pathname.slice(1))?u.pathname.slice(1):null;if(host==='youtube.com'||host==='www.youtube.com'||host==='m.youtube.com'){let id=u.searchParams.get('v')||(u.pathname.match(/^\/(?:shorts|live)\/([a-zA-Z0-9_-]{11})/)||[])[1];return id&&/^[a-zA-Z0-9_-]{11}$/.test(id)?id:null}}catch(e){}return null}
+function render(){const q=$('search').value.trim().toLowerCase(),category=$('category').value;const found=videos.filter(v=>(category==='all'||v.category===category)&&[v.title,v.description,v.category].join(' ').toLowerCase().includes(q));$('count').textContent=videos.length===0?'Video listings are being prepared. Visit the YouTube channel above for the latest videos.':found.length+' of '+videos.length+' videos';$('results').replaceChildren();if(!found.length&&videos.length){const p=document.createElement('p');p.className='muted';p.textContent='No matching videos. Try another search or category.';$('results').append(p)}for(const v of found){const id=videoId(v.url);if(!id)continue;const card=document.createElement('article');card.className='card';const thumb=document.createElement('a');thumb.className='thumb';thumb.href=v.url;thumb.target='_blank';thumb.rel='noopener noreferrer';thumb.setAttribute('aria-label','Watch '+v.title+' on YouTube');const img=document.createElement('img');img.src='https://i.ytimg.com/vi/'+id+'/hqdefault.jpg';img.alt='YouTube thumbnail for '+v.title;img.loading='lazy';thumb.append(img);const body=document.createElement('div');body.className='card-body';const cat=document.createElement('div');cat.className='category';cat.textContent=v.category;const title=document.createElement('h2');title.textContent=v.title;const desc=document.createElement('p');desc.textContent=v.description||'Watch the original video on YouTube.';const link=document.createElement('a');link.className='button';link.textContent='Watch on YouTube ↗';link.href=v.url;link.target='_blank';link.rel='noopener noreferrer';body.append(cat,title,desc,link);card.append(thumb,body);$('results').append(card)}}
+fetch('./videos.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Video directory unavailable');return r.json()}).then(data=>{videos=(Array.isArray(data)?data:[]).filter(v=>v&&typeof v.title==='string'&&typeof v.url==='string'&&categories.includes(v.category)&&videoId(v.url));render()}).catch(()=>{$('count').textContent='Video directory unavailable right now. Use the channel link above.'});
+$('search').addEventListener('input',render);$('category').addEventListener('change',render);
+</script></body></html>
