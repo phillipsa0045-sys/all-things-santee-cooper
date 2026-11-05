@@ -1,8 +1,9 @@
-name: Generate Facebook preview image
+name: Generate social preview images
 on:
   push:
     paths:
       - 'assets/videos-banner.svg'
+      - 'assets/home-banner.svg'
       - '.github/workflows/generate-video-preview.yml'
   workflow_dispatch:
 permissions:
@@ -26,13 +27,15 @@ jobs:
           png=cairosvg.svg2png(url=str(source),output_width=1200,output_height=630)
           image=Image.open(io.BytesIO(png)).convert("RGB")
           image.save("assets/videos-facebook-preview.jpg",quality=88,optimize=True,progressive=True)
-          print("Created assets/videos-facebook-preview.jpg")
+          home_png=cairosvg.svg2png(url="assets/home-banner.svg",output_width=1200,output_height=630)
+          Image.open(io.BytesIO(home_png)).convert("RGB").save("assets/home-facebook-preview.jpg",quality=88,optimize=True,progressive=True)
+          print("Created both social preview images")
           PY
       - name: Commit preview image
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/videos-facebook-preview.jpg
+          git add assets/videos-facebook-preview.jpg assets/home-facebook-preview.jpg
           if ! git diff --cached --quiet; then
             git commit -m "Render Facebook JPG preview for video library"
             git push
