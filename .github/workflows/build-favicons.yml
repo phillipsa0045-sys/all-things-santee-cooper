@@ -1,0 +1,37 @@
+name: Build favicon formats
+on:
+  push:
+    paths:
+      - 'assets/favicon.svg'
+      - '.github/workflows/build-favicons.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate browser and Apple icons
+        run: |
+          python -m pip install --quiet pillow
+          python - <<'PY'
+          import re,base64,io
+          from pathlib import Path
+          from PIL import Image
+          svg=Path("assets/favicon.svg").read_text()
+          b64=re.search(r'data:image/png;base64,([^"]+)',svg).group(1)
+          im=Image.open(io.BytesIO(base64.b64decode(b64))).convert('RGBA')
+          im.resize((32,32),Image.Resampling.LANCZOS).save("assets/favicon-32.png",optimize=True)
+          im.resize((180,180),Image.Resampling.LANCZOS).save("assets/apple-touch-icon.png",optimize=True)
+          im.save("favicon.ico",format='ICO',sizes=[(16,16),(32,32),(48,48),(64,64)])
+          PY
+      - name: Commit generated icons
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/favicon-32.png assets/apple-touch-icon.png favicon.ico
+          if ! git diff --cached --quiet; then
+            git commit -m "Add PNG, Apple and ICO favicon sizes"
+            git push
+          fi
